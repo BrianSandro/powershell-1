@@ -1,0 +1,1 @@
+Search-ADAccount -PasswordNeverExpires | Where {$_.Enabled} | Sort Name | Get-ADUser -Prop Name,Description,DistinguishedName | Select Name,Description,@{name="OU";expression={($_.DistinguishedName -split ",OU=")[1]}} | Export-CSV users-psw-noexpire.csv
