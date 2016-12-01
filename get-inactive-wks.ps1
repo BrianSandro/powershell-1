@@ -1,0 +1,1 @@
+$datecutoff = (Get-Date).AddDays(-90) Get-ADComputer  -Properties LastLogonDate -Filter {LastLogonDate -lt $datecutoff} | Sort LastLogonDate | FT Name, LastLogonDate -Autosize | Out-File inactiveWorkstations.txt
