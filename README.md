@@ -1,6 +1,8 @@
-# powershell useful scripts
+## powershell useful scripts
 
-Get-LockedOutUser.ps1 is an advanced script that returns a list of users who were locked out in Active Directory
+######Get-LockedOutUser.ps1 
+
+Returns a list of users who were locked out in Active Directory
 by querying the event logs on the PDC emulation in the domain.
  
 .FLAG UserName
