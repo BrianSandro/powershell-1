@@ -1,6 +1,6 @@
 ## powershell useful scripts
 
-######Get-LockedOutUser.ps1 
+######[get-lockedout-user.ps1] (https://github.com/blastik/powershell/blob/master/get-lockedout-user.ps1)
 
 Returns a list of users who were locked out in Active Directory
 by querying the event logs on the PDC emulation in the domain.
