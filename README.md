@@ -30,7 +30,7 @@ Export the users that didnt log into the AD for 180 days in a file called inacti
 
 ######get-inactive-wks.ps1
 
-Export the workstations that didnt log into the AD for 90 days in C:\Temp\inactiveWorkstations.txt 
+Export the workstations that didnt log into the AD for 90 days in a file called inactiveWorkstations.txt 
 
 ######get-accounts-notexpire.ps1
 
