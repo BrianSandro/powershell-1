@@ -1,0 +1,1 @@
+﻿Get-CasMailbox -ResultSize unlimited | where {$_.ImapEnabled -Or $_.PopEnabled -eq 'True'} | Sort-Object name | ft name –autosize > imapenabled.txt

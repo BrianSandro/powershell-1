@@ -1,0 +1,1 @@
+foreach ($identity in Get-Content .\imapenabled.txt) {Set-CASMailbox -Identity $identity -ImapEnabled $False -PopEnabled $False}
