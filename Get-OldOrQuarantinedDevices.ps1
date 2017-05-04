@@ -1,0 +1,1 @@
+﻿Get-Mailbox -ResultSize unlimited | ForEach {Get-MobileDeviceStatistics -Mailbox:$_.Identity} | where {$_.LastSuccessSync -lt (Get-Date).AddDays("-30") -Or $_.DeviceAccessState -eq 'Quarantined'} | ft -AutoSize DeviceModel,LastSuccessSync,DeviceAccessState > unuseddevices.txt

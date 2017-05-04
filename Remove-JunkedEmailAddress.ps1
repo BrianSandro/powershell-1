@@ -1,0 +1,1 @@
+Set-MailboxJunkEmailConfiguration -Identity user@telemedicineclinic.com -BlockedSendersAndDomains @{remove="email@beingjunked.com"
